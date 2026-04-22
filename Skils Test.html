@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+
+
+<style>
+	body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+}
+
+/* LOGIN */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-card {
+  background: #90d0f8;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.logo {
+  width: 60px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 20px;
+  border: none;
+  background: #ddd;
+}
+
+.btn {
+  background: #00bcd4;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: rgb(5, 88, 255);
+  cursor: pointer;
+}
+
+.cancel {
+  background: none;
+  border: none;
+  margin-left: 10px;
+}
+
+.forgot {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background: #1e2a38;
+  color: rgb(0, 122, 245);
+  position: fixed;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 15px;
+  cursor: pointer;
+}
+
+.sidebar li.active {
+  background: #023971;
+}
+
+/* MAIN */
+.main {
+  margin-left: 200px;
+  padding: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.card {
+  background: rgb(5, 33, 244);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+</style>
+
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="login-container">
+    <div class="login-card">
+        <img src="logo .png" class="logo" alt="Logo">
+        <h2>Login</h2>
+
+        <input type="text" placeholder="Enter here" class="input">
+        <input type="password" placeholder="********" class="input">
+
+        <div class="options">
+            <label>
+                <input type="checkbox" checked> Stay logged in
+            </label>
+            <small>Your session will stay active on this device.</small>
+        </div>
+
+        <div class="buttons">
+            <button class="login-btn" onclick="login()">Login</button>
+            <button class="cancel-btn">Cancel</button>
+        </div>
+
+        <a href="#" class="forgot">Forgot username / password?</a>
+    </div>
+</div>
+
+<script>
+function login() {
+    window.location.href = "notebooks.html";
+}
+</script>
+
+</body>
+</html>

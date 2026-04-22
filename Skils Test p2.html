@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Notebooks</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+}
+
+/* LOGIN */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.logo {
+  width: 60px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 20px;
+  border: none;
+  background: #101010;
+}
+
+.btn {
+  background: #00bcd4;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.cancel {
+  background: none;
+  border: none;
+  margin-left: 10px;
+}
+
+.forgot {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background: #013570;
+  color: rgb(0, 0, 0);
+  position: fixed;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 15px;
+  cursor: pointer;
+}
+
+.sidebar li.active {
+  background: #0080ff;
+}
+
+/* MAIN */
+.main {
+  margin-left: 200px;
+  padding: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+
+  </style>
+
+
+</head>
+<body>
+
+<div class="sidebar">
+  <img src="logo .png" class="logo-small">
+  <ul>
+    <li>Dashboard</li>
+    <li class="active">Virtual Notebooks</li>
+    <li>Tasks</li>
+    <li>Profile</li>
+    <li>Logout</li>
+  </ul>
+</div>
+
+<div class="main">
+  <h2>NOTEBOOKS</h2>
+  <p>Select a subject.</p>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Filipino</h3>
+      <p>9-Emerald 2025-2026</p>
+      <span>Jemima Francisco</span>
+    </div>
+
+    <div class="card">
+      <h3>English</h3>
+      <p>9-Emerald 2025-2026</p>
+      <span>Kristin Avila</span>
+    </div>
+
+    <div class="card">
+      <h3>Math</h3>
+      <p>9-Emerald 2025-2026</p>
+      <span>Caleb Verba</span>
+    </div>
+
+    <div class="card">
+      <h3>Science</h3>
+      <p>9-Emerald 2025-2026</p>
+      <span>Jessica Mendaro</span>
+    </div>
+
+    <div class="card">
+      <h3>Social Studies</h3>
+      <p>9-Emerald 2025-2026</p>
+      <span>Prinz Reynoso</span>
+    </div>
+
+    <div class="card">
+      <h3>Values Education</h3>
+      <p>9-Amethyst 2025-2026</p>
+      <span>Bernard Buntile</span>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
